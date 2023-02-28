@@ -12,3 +12,5 @@ categoriesEl.forEach((number) => {
   console.log('Elements:', numberOfitems);
 });
 console.log('Number of categories:', numberOfCategories);
+
+
