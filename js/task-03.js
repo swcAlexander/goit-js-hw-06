@@ -20,4 +20,4 @@ const createGalleryItem = ({ url, alt }) => {
 };
 
 const galleryMarkup = images.map(createGalleryItem).join('');
-galleryList.insertAdjacentHTML('beforeend', galleryMarkup);
+galleryListEl.insertAdjacentHTML('beforeend', galleryMarkup);

@@ -18,13 +18,13 @@
 // Якщо користувач заповнив усі поля і відправив форму, збери значення полів в об'єкт, де ім'я поля буде ім'ям властивості, а значення поля - значенням властивості. Для доступу до елементів форми використовуй властивість elements.
 // Виведи об'єкт із введеними даними в консоль і очисти значення полів форми методом reset.
 
-const loginForm = document.querySelector('.login-form');
+const loginFormEl = document.querySelector('.login-form');
 
-loginForm.addEventListener('submit', (event) => {
+loginFormEl.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const emailInput = loginForm.elements.email;
-  const passwordInput = loginForm.elements.password;
+  const emailInput = loginFormEl.elements.email;
+  const passwordInput = loginFormEl.elements.password;
 
   if (emailInput.value === '' || passwordInput.value === '') {
     alert('Всі поля повинні бути заповнені');
@@ -38,5 +38,5 @@ loginForm.addEventListener('submit', (event) => {
 
   console.log(formData);
 
-  loginForm.reset();
+  loginFormEl.reset();
 });
